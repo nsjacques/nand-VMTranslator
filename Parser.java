@@ -15,4 +15,24 @@ Parser for the VM language described in Elements of Computing Systems by Nisan, 
 
 public class Parser{
 
+	public Parser(String fileIn){//File type in java?
+
+	}
+
+	public void setFileName(String fileName){
+
+	}
+
+	public void writeArithmetic(String command){
+
+	}
+
+	public void writePushPop(String command, String segment, int index){//command as an enum?
+
+	}
+
+	public void close(){
+
+	}
+
 }

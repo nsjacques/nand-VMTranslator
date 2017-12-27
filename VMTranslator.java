@@ -14,7 +14,12 @@ Compiler backend VM translator for the Hack Assembly Language and VM language
 
 public class VMTranslator{
 
-	public static void main(){
+	/*
+	Arguments of the form
+	*/
+	public static void main(String[] args){
+
+		CodeWriter cw = new CodeWriter()
 
 	}
 

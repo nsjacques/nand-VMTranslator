@@ -13,4 +13,32 @@ Codewriter for the Hack Assembly Language described in Elements of Computing Sys
 
 public class CodeWriter{
 
+	public CodeWriter(String fileOut){//File a type in java?
+
+	}
+
+	public boolean hasMoreCommands(){
+
+		return null;
+	}
+
+	public void advance(){
+
+	}
+
+	public String commandType(){//return an enum?
+		
+		return null;
+	}
+
+	public String arg1(){
+
+		return null;
+	}
+
+	public String arg2(){
+		
+		return null;
+	}
+
 }
