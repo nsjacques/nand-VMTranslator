@@ -12,6 +12,12 @@ Compiler backend VM translator for the Hack Assembly Language and VM language
 
 */
 
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FilenameFilter;
+//io.PrintStream??
+
 public class VMTranslator{
 
 	/*
@@ -27,7 +33,32 @@ public class VMTranslator{
 		//Create parser for each vm file. One at a time or all at once? Multi-thread this if >1?
 		//Parse them all into command lists and write code for them all? Forget how this works.
 
-		CodeWriter cw = new CodeWriter();
+		FilenameFilter vmFilter = new FilenameFilter() {
+			@Override
+			public boolean accept(File dir, String name){
+				//Do I need to make sure the last index of "." is greater than 0?
+				if (name.substring(name.lastIndexOf(".")).equals(".vm")){
+					return true;
+				}
+				return false;
+			}
+		};
+
+		File input = new File(args[0]); //Does this compiling guarantee either direc. or file?
+				//if so should I add exception for file not found? ya
+		if (input.isFile()){
+			Parser parser = new Parser(input);
+		}
+		else{
+			File[] listOfFiles = input.listFiles(vmFilter);
+			for (File file : listOfFiles){
+				Parser parser = new Parser(file);
+			}
+		}
+
+		System.out.println("Success");
+
+		//CodeWriter cw = new CodeWriter(args[0] + ".asm");
 
 	}
 

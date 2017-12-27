@@ -14,13 +14,13 @@ Parser for the VM language described in Elements of Computing Systems by Nisan, 
 */
 
 import java.util.Scanner;
-import java.util.File;
-import java.util.FileNotFoundException;
+import java.io.File;
+import java.io.FileNotFoundException;
 //io.PrintStream??
 
 public class Parser{
 
-	public Parser(String fileIn){//File type in java?
+	public Parser(File fileIn){//File type in java?
 
 	}
 
