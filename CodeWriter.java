@@ -11,6 +11,11 @@ Codewriter for the Hack Assembly Language described in Elements of Computing Sys
 
 */
 
+import java.util.Scanner;
+import java.util.File;
+import java.util.FileNotFoundException;
+//io.PrintStream??
+
 public class CodeWriter{
 
 	public CodeWriter(String fileOut){//File a type in java?

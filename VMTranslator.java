@@ -15,11 +15,11 @@ Compiler backend VM translator for the Hack Assembly Language and VM language
 public class VMTranslator{
 
 	/*
-	Arguments of the form
+	Argument is either the name of a directory containing .vm files or of a .vm file
 	*/
 	public static void main(String[] args){
 
-		CodeWriter cw = new CodeWriter()
+		CodeWriter cw = new CodeWriter();
 
 	}
 
